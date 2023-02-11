@@ -1,7 +1,12 @@
 package org.example;
 
+import java.io.IOException;
+
+// get /calculate?operand1=11&operator=*&operand2=55
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args) throws IOException {
+
+        //System.out.println("Hello world!");
+        new CustomWebApplicationServer(8080).start();
     }
 }
